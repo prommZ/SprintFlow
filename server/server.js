@@ -15,7 +15,11 @@ const app = express();
 
 // Middleware
 app.use(cors({
+<<<<<<< HEAD
   origin: process.env.CLIENT_URL || 'https://sprint-flow-79smq9zf7-prommzs-projects.vercel.app',
+=======
+  origin: true,
+>>>>>>> a192114 (updated in routes api)
   credentials: true
 }));
 app.use(express.json({ limit: '10mb' }));
