@@ -38,7 +38,7 @@ app.use('/api/focus', require('./src/routes/focusRoutes'));
 app.use('/api/analytics', require('./src/routes/analyticsRoutes'));
 
 // Health check
-app.get('/api/health', (req, res) => {
+app.get('/', (req, res) => {
   res.json({ success: true, message: 'SprintFlow API is running', timestamp: new Date().toISOString() });
 });
 
