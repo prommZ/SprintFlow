@@ -51,7 +51,7 @@ app.use((req, res) => {
 app.use(errorHandler);
 
 const PORT = process.env.PORT || 5000;
-console.log("MONGO_URI =", process.env.MONGO_URI);
+//console.log("MONGO_URI =", process.env.MONGO_URI);
 app.listen(PORT, () => {
   console.log(`\n🚀 SprintFlow API running on port ${PORT}`);
   console.log(`   Environment: ${process.env.NODE_ENV || 'development'}`);
